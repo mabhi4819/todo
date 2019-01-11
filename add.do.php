@@ -17,7 +17,8 @@
 	echo $sql;
 
 	if(mysqli_query($conn, $sql)){
-		echo "Succesfully Inserted";
+		// echo "Succesfully Inserted";
+		header('location: index.php');
 	}
 	else{
 		die(mysqli_error($conn));

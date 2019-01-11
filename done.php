@@ -4,7 +4,7 @@
 
 	$taskid = $_GET["taskid"];
 
-	$sql = "DELETE FROM tasks WHERE taskid='$taskid'";
+	$sql = "UPDATE tasks SET status = '1' WHERE taskid='$taskid'";
 
 	if(mysqli_query($conn, $sql)){
 		// echo "Succesfully Deleted";
